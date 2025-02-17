@@ -10,14 +10,14 @@ class DesktopScaffold extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final pageProvider = Provider.of<PageProvider>(context, listen: false);
-    return  Scaffold(
+    return Scaffold(
       backgroundColor: Colors.redAccent,
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         automaticallyImplyLeading: false,
-        title: const Text('Name Page'),
-        actions:  [
+        title: const Text('Finactix'),
+        actions: [
           ExtendAppBarButton(
             text: 'Home',
             onPressed: () => pageProvider.goTo(0),
@@ -38,7 +38,7 @@ class DesktopScaffold extends StatelessWidget {
             text: 'Location',
             onPressed: () => pageProvider.goTo(4),
           ),
-          const SizedBox(width: 20),          
+          const SizedBox(width: 20),
         ],
         // elevation: 10,
       ),
@@ -46,4 +46,3 @@ class DesktopScaffold extends StatelessWidget {
     );
   }
 }
-

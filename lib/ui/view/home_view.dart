@@ -8,14 +8,10 @@ class HomeView extends StatelessWidget {
     return Container(
       color: Colors.blueAccent,
       child: const Center(
-        child: Text(
-          'HomeView',
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 40
-          ),
-        )
-      ),
+          child: Text(
+        'Finactix',
+        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
+      )),
     );
   }
 }

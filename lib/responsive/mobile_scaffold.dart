@@ -17,7 +17,7 @@ class MobileScaffold extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         automaticallyImplyLeading: false,
-        title: const Text('Name Page'),
+        title: const Text('Finactix'),
         centerTitle: false,
       ),
       endDrawer: Drawer(
@@ -27,31 +27,30 @@ class MobileScaffold extends StatelessWidget {
             DrawerListTile(
               icon: Icons.home,
               name: const Text('Home'),
-              onPressed: ()=> pageProvider.goTo(0),              
+              onPressed: () => pageProvider.goTo(0),
             ),
             DrawerListTile(
               icon: Icons.people,
               name: const Text('About'),
-              onPressed: ()=> pageProvider.goTo(1),
+              onPressed: () => pageProvider.goTo(1),
             ),
             DrawerListTile(
               icon: Icons.money,
               name: const Text('Pricing'),
-              onPressed: ()=> pageProvider.goTo(2),
+              onPressed: () => pageProvider.goTo(2),
             ),
             DrawerListTile(
               icon: Icons.mail_outline_outlined,
               name: const Text('Contact'),
-              onPressed: ()=> pageProvider.goTo(3),
+              onPressed: () => pageProvider.goTo(3),
             ),
             DrawerListTile(
               icon: Icons.location_on,
               name: const Text('Location'),
-              onPressed: ()=> pageProvider.goTo(4),
+              onPressed: () => pageProvider.goTo(4),
             ),
           ],
         ),
-
       ),
       body: const HomeBody(),
     );
