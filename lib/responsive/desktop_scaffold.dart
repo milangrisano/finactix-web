@@ -14,13 +14,14 @@ class DesktopScaffold extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black,
       extendBodyBehindAppBar: true,
-      appBar: AppBar(
+      appBar: AppBar(        
         backgroundColor: Colors.transparent,
         automaticallyImplyLeading: false,
-        title: const LettersBold(
+        leading: Image.asset('assets/logo/Logo1.png'),
+        title: const Letters(
           text: 'Finactix',
-          fontSize: 24,
-          color: Colors.greenAccent,
+          fontSize: 30,
+          color: Color.fromRGBO(95, 145, 61, 1),
           ),
         actions: [
           ExtendAppBarButton(

@@ -54,7 +54,7 @@ class LettersBoldCenter extends StatelessWidget {
     super.key,
     required this.text,
     this.fontSize  = 12,
-    this.color  = Colors.black,
+    this.color  = Colors.white,
   });
   final String text;
   final double fontSize;
@@ -82,7 +82,7 @@ class LettersCenter extends StatelessWidget {
     super.key,
     required this.text,
     this.fontSize  = 12,
-    this.color  = Colors.black,
+    this.color  = Colors.white,
   });
 
 

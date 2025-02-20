@@ -17,7 +17,7 @@ class ExtendAppBarButton extends StatelessWidget {
       child: TextButton(
         onPressed: () => onPressed(),
         style: TextButton.styleFrom(
-          foregroundColor: Colors.white,
+          foregroundColor: const Color.fromRGBO(95, 145, 61, 1),
           textStyle: const TextStyle(
             fontSize: 22,
             fontWeight: FontWeight.bold,

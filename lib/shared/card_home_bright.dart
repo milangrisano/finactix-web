@@ -23,21 +23,21 @@ class _CardHomeBrightState extends State<CardHomeBright> {
       onExit: (context) => setState(() => _isHovered = false),
       child: Container(
         decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: _isHovered
-          ? [Colors.greenAccent, Colors.lightBlueAccent]
-          : [Colors.black45, Colors.black87]
-        ),
-        boxShadow:  const [
-          BoxShadow(
-            color: Colors.white,
-            blurRadius: 20,
-            offset: Offset(-5, 5)
-          )
-        ]
+          borderRadius: BorderRadius.circular(20),
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: _isHovered
+            ? [const Color.fromRGBO(95, 145, 61, 1), Colors.lightBlueAccent]
+            : [Colors.black45, Colors.black87]
+          ),
+          boxShadow:  const [
+            BoxShadow(
+              color: Colors.white,
+              blurRadius: 20,
+              offset: Offset(-5, 5)
+            )
+          ]
         ),
         width: 300,
         height: 400,
