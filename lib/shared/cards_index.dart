@@ -14,6 +14,14 @@ class CardsIndex extends StatelessWidget {
       height: 100,
       width: 180,
       decoration:  const BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Colors.black54,
+            Colors.black87
+          ]
+        ),
         color: Colors.black87,
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(20),
@@ -42,13 +50,13 @@ class CardsIndex extends StatelessWidget {
             ),
           ),
           const Spacer(),
-          const Column(
+          Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              LettersBoldCenter(text: 'buy'),
-              LettersCenter(text: '244.87',fontSize: 10, color: Colors.grey),
-              LettersBoldCenter(text: 'sale'),
-              LettersCenter(text: '245.13',fontSize: 10, color: Colors.grey),
+              const LettersBoldCenter(text: 'buy'),
+              LettersCenter(text: '244.87',fontSize: 10, color: Colors.grey.shade300),
+              const LettersBoldCenter(text: 'sale'),
+              LettersCenter(text: '245.13',fontSize: 10, color: Colors.grey.shade300),
           
             ],
           ),

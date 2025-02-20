@@ -14,7 +14,7 @@ class HomeView extends StatelessWidget {
               opacity: 0.4,
               fit: BoxFit.contain),
         ),
-        child:  Column(
+        child:   Column(
           children: [
             const Spacer(),
             const Row(
@@ -22,19 +22,19 @@ class HomeView extends StatelessWidget {
               children: [ 
                 CardHomeBright(
                   title: 'Tax Preparation Services',
-                  textBody: 'Occaecat officia excepteur voluptate et adipisicing nostrud ut enim mollit consectetur et ipsum. Dolore eiusmod enim incididunt veniam eiusmod ex consectetur nulla magna aliquip eiusmod. Consectetur tempor excepteur in anim minim et adipisicing quis amet eu nulla minim. Aliquip laboris consequat excepteur elit. Voluptate qui sunt laboris ullamco anim reprehenderit quis labore dolore eiusmod in laboris.'
+                  textBody: 'Nisi duis nostrud excepteur voluptate sunt esse. Deserunt officia et dolor velit ullamco est occaecat officia ipsum reprehenderit. Et magna officia occaecat excepteur dolore incididunt aliquip exercitation ad minim dolor occaecat. Ullamco mollit excepteur adipisicing deserunt tempor in dolor esse officia. Officia nulla excepteur ea est pariatur sint anim occaecat dolor dolor. Ipsum cillum nisi reprehenderit dolor. Dolor labore minim dolore sit in nostrud.', icon: Icons.bar_chart_rounded,
                 ),
                 CardHomeBright(
                   title: 'Financial Services',
-                  textBody: 'Elit laborum elit cillum officia et irure aute. Nulla officia voluptate veniam exercitation deserunt ex dolore exercitation tempor exercitation Lorem commodo aute. In in non incididunt sunt enim labore proident in adipisicing ut nostrud ullamco. Ex nisi ullamco exercitation elit qui ut dolor eu. Duis irure proident reprehenderit sint eu officia sint. Culpa nulla consectetur eu in est et anim aute laborum incididunt laborum officia amet. Sunt amet labore veniam duis elit occaecat pariatur.',
+                  textBody: 'Elit laborum elit cillum officia et irure aute. Nulla officia voluptate veniam exercitation deserunt ex dolore exercitation tempor exercitation Lorem commodo aute. In in non incididunt sunt enim labore proident in adipisicing ut nostrud ullamco. Ex nisi ullamco exercitation elit qui ut dolor eu. Duis irure proident reprehenderit sint eu officia sint. Culpa nulla consectetur eu in est et anim aute laborum incididunt laborum officia amet. Sunt amet labore veniam duis elit occaecat pariatur.', icon: Icons.calculate_outlined,
                 ),
                 CardHomeBright(
                   title: 'Insurance Strategies',
-                  textBody: 'Incididunt sit quis elit consequat est aute ullamco consequat aute. Proident fugiat nostrud ut qui anim commodo anim aute qui eu. Cupidatat Lorem aliqua proident mollit incididunt quis.'
+                  textBody: 'Incididunt sit quis elit consequat est aute ullamco consequat aute. Proident fugiat nostrud ut qui anim commodo anim aute qui eu. Cupidatat Lorem aliqua proident mollit incididunt quis.', icon: Icons.verified_user_outlined,
                 ),
                 CardHomeBright(
                   title: 'Book Keeping',
-                  textBody: 'Deserunt ipsum esse reprehenderit commodo amet sunt cillum cupidatat laboris. Culpa pariatur cillum duis elit. Nisi minim labore nulla eiusmod ullamco laborum non nulla et dolor qui. Deserunt aliqua proident elit elit anim ad nulla laboris aliqua commodo ut. Aliquip sunt amet nostrud sit.'
+                  textBody: 'Deserunt ipsum esse reprehenderit commodo amet sunt cillum cupidatat laboris. Culpa pariatur cillum duis elit. Nisi minim labore nulla eiusmod ullamco laborum non nulla et dolor qui. Deserunt aliqua proident elit elit anim ad nulla laboris aliqua commodo ut. Aliquip sunt amet nostrud sit.', icon: Icons.library_books_outlined,
                 ),
               ],
             ),
