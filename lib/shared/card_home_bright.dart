@@ -30,11 +30,15 @@ class _CardHomeBrightState extends State<CardHomeBright> {
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
                 colors: _isHovered
-                    ? [
-                        const Color.fromRGBO(95, 145, 61, 1),
-                        Colors.lightBlueAccent
-                      ]
-                    : [Colors.black45, Colors.black87]),
+                  ? [
+                      const Color.fromRGBO(95, 145, 61, 1),
+                      Colors.lightBlueAccent
+                    ]
+                  : [ 
+                      Colors.black45,
+                      Colors.black87
+                    ]
+            ),
             boxShadow: const [
               BoxShadow(
                   color: Colors.white, blurRadius: 20, offset: Offset(-5, 5))
