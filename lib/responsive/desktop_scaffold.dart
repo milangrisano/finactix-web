@@ -44,6 +44,12 @@ class DesktopScaffold extends StatelessWidget {
             text: 'Book Keeping',
             onPressed: () => pageProvider.goTo(4),
           ),
+          IconButton(
+            onPressed: () => null,
+            icon: const Icon(Icons.person_2_rounded),
+            iconSize: 30,
+            color: const Color.fromRGBO(95, 145, 61, 1),
+          ),
           const SizedBox(width: 20),
         ],
         elevation: 10,
