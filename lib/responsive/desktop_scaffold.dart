@@ -12,7 +12,7 @@ class DesktopScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     final pageProvider = Provider.of<PageProvider>(context, listen: false);
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: const Color.fromARGB(255, 0, 4, 51),
       extendBodyBehindAppBar: true,
       appBar: AppBar(        
         backgroundColor: Colors.transparent,
@@ -45,7 +45,7 @@ class DesktopScaffold extends StatelessWidget {
             onPressed: () => pageProvider.goTo(4),
           ),
           IconButton(
-            onPressed: () => null,
+            onPressed: () {},
             icon: const Icon(Icons.person_2_rounded),
             iconSize: 30,
             color: const Color.fromRGBO(95, 145, 61, 1),

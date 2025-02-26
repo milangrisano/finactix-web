@@ -7,11 +7,13 @@ class CardHomeBright extends StatefulWidget {
   final String title;
   final String textBody;
   final IconData icon;
+  final int page;
   const CardHomeBright({
     super.key,
     required this.title,
     required this.textBody,
     required this.icon,
+    required this.page,
   });
   @override
   State<CardHomeBright> createState() => _CardHomeBrightState();
@@ -25,7 +27,7 @@ class _CardHomeBrightState extends State<CardHomeBright> {
       onEnter: (context) => setState(() => _isHovered = true),
       onExit: (context) => setState(() => _isHovered = false),
       child: InkWell(
-        onTap: () => setState (() => pageProvider.goTo(1)),
+        onTap: () => pageProvider.goTo(widget.page),
         child: Ink(
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
