@@ -53,11 +53,10 @@ class CardsIndex extends StatelessWidget {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const LettersBoldCenter(text: 'buy'),
+              const LettersBoldCenter(text: 'Open'),
               LettersCenter(text: '244.87',fontSize: 10, color: Colors.grey.shade300),
-              const LettersBoldCenter(text: 'sale'),
-              LettersCenter(text: '245.13',fontSize: 10, color: Colors.grey.shade300),
-          
+              const LettersBoldCenter(text: 'close'),
+              LettersCenter(text: '245.13',fontSize: 10, color: Colors.grey.shade300),          
             ],
           ),
           const Spacer()

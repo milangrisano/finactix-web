@@ -6,11 +6,12 @@ class AboutView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.orangeAccent,
+      color: const Color.fromARGB(255, 0, 4, 51),
       child: const Center(
         child: Text(
-          'AboutView',
+          'Tax Preparation Services',
           style: TextStyle(
+            color: Colors.white,
             fontWeight: FontWeight.bold,
             fontSize: 40
           ),

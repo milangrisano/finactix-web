@@ -39,11 +39,19 @@ class _CardHomeBrightState extends State<CardHomeBright> {
                           const Color.fromRGBO(95, 145, 61, 1),
                           Colors.lightBlueAccent
                         ]
-                      : [Colors.black45, Colors.black87]),
+                      : [
+                          const Color.fromARGB(255, 8, 131, 145),
+                          const Color.fromARGB(255, 11, 34, 67),
+                        ]
+              ),
               boxShadow: const [
                 BoxShadow(
-                    color: Colors.white, blurRadius: 20, offset: Offset(-5, 5))
-              ]),
+                    color: Colors.white,
+                    blurRadius: 20,
+                    offset: Offset(-5, 5)
+                  )
+                ]
+              ),
           width: 300,
           height: 450,
           child: Padding(
