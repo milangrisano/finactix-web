@@ -4,6 +4,7 @@ import 'package:responsive_app/provider/page_provider.dart';
 import 'package:responsive_app/router/router.dart';
 
 void main() {
+  Flurorouter.configureRoutes();
   runApp(const AppState());
 }
 
@@ -27,18 +28,15 @@ class MainApp extends StatefulWidget {
 
 class _MainAppState extends State<MainApp> {
   @override
-  void initState() {
-    super.initState();
-    Flurorouter.configureRoutes();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Finactix',
       onGenerateRoute: Flurorouter.router.generator,
       initialRoute: '/home',
+      // builder: (_, child) {
+      //   return const DesktopScaffold();
+      // },
     );
   }
 }

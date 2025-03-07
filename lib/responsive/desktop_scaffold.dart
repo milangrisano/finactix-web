@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:responsive_app/Text/letters.dart';
 import 'package:responsive_app/provider/page_provider.dart';
 import 'package:responsive_app/shared/extend_appbar_button.dart';
-import 'package:responsive_app/ui/home_body.dart';
+import 'package:responsive_app/ui/layout/landing_page_layout.dart';
 
 class DesktopScaffold extends StatelessWidget {
   const DesktopScaffold({super.key});
@@ -54,7 +54,7 @@ class DesktopScaffold extends StatelessWidget {
         ],
         elevation: 10,
       ),
-      body: const HomeBody(),
+      body: const LandingPageLayout(),
     );
   }
 }

@@ -26,57 +26,59 @@ class _CardHomeBrightState extends State<CardHomeBright> {
     return MouseRegion(
       onEnter: (context) => setState(() => _isHovered = true),
       onExit: (context) => setState(() => _isHovered = false),
-      child: InkWell(
-        onTap: () => pageProvider.goTo(widget.page),
-        child: Ink(
-          decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: _isHovered
-                      ? [
-                          const Color.fromRGBO(95, 145, 61, 1),
-                          Colors.lightBlueAccent
-                        ]
-                      : [
-                          const Color.fromARGB(255, 8, 131, 145),
-                          const Color.fromARGB(255, 11, 34, 67),
-                        ]
-              ),
-              boxShadow: const [
-                BoxShadow(
-                    color: Colors.white,
-                    blurRadius: 20,
-                    offset: Offset(-5, 5)
-                  )
-                ]
-              ),
-          width: 300,
-          height: 450,
-          child: Padding(
-            padding: const EdgeInsets.all(12.0),
-            child: Column(
-              children: [
-                Icon(
-                  widget.icon,
-                  size: 50,
-                  color: Colors.white,
+      child: Material(
+        child: InkWell(
+          onTap: () => pageProvider.goTo(widget.page),
+          child: Ink(
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: _isHovered
+                        ? [
+                            const Color.fromRGBO(95, 145, 61, 1),
+                            Colors.lightBlueAccent
+                          ]
+                        : [
+                            const Color.fromARGB(255, 8, 131, 145),
+                            const Color.fromARGB(255, 11, 34, 67),
+                          ]
                 ),
-                LettersBoldCenter(
-                  text: widget.title,
-                  fontSize: 22,
-                  color: Colors.white,
+                boxShadow: const [
+                  BoxShadow(
+                      color: Colors.white,
+                      blurRadius: 20,
+                      offset: Offset(-5, 5)
+                    )
+                  ]
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: LettersJustify(
-                    text: widget.textBody,
-                    fontSize: 14,
+            width: 300,
+            height: 450,
+            child: Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: Column(
+                children: [
+                  Icon(
+                    widget.icon,
+                    size: 50,
                     color: Colors.white,
                   ),
-                )
-              ],
+                  LettersBoldCenter(
+                    text: widget.title,
+                    fontSize: 22,
+                    color: Colors.white,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: LettersJustify(
+                      text: widget.textBody,
+                      fontSize: 14,
+                      color: Colors.white,
+                    ),
+                  )
+                ],
+              ),
             ),
           ),
         ),

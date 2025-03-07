@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_app/provider/page_provider.dart';
 import 'package:responsive_app/shared/extend_appbar_icon.dart';
-import 'package:responsive_app/ui/home_body.dart';
+import 'package:responsive_app/ui/layout/landing_page_layout.dart';
 
 class TabletScaffold extends StatelessWidget {
   const TabletScaffold({super.key});
@@ -46,7 +46,7 @@ class TabletScaffold extends StatelessWidget {
         ],
         // elevation: 10,
       ),
-      body: const HomeBody(),
+      body: const LandingPageLayout(),
     );
   }
 }

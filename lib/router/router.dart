@@ -1,16 +1,19 @@
 import 'package:fluro/fluro.dart';
-import 'package:responsive_app/router/router_handlers.dart';
+import 'package:responsive_app/router/auth_handlers.dart';
+import 'package:responsive_app/router/home_handlers.dart';
 
 class Flurorouter {
   static final FluroRouter router = FluroRouter();
-  static String login = '/login';
-  static String landingPage = '/:page';
+  static String loginRoute = 'auth/login';
+  static String registerRoute = 'auth/register';
+  static String landingPageRoute = '/:page';
 
   static void configureRoutes(){
     
     // Rutas
-    router.define(landingPage, handler: homeHandler );
-    router.define(login, handler: loginHandler);
+    router.define(landingPageRoute, handler: homeHandler );
+    router.define(loginRoute, handler: AuthHandlers.login);
+    // router.define(registerRoute, handler: authHandler);
 
     // 404
     router.notFoundHandler = homeHandler;

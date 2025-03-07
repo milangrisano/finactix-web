@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:responsive_app/provider/page_provider.dart';
 import 'package:responsive_app/shared/custom_drawer_header.dart';
 import 'package:responsive_app/shared/drawer_list_tile.dart';
-import 'package:responsive_app/ui/home_body.dart';
+import 'package:responsive_app/ui/layout/landing_page_layout.dart';
 
 class MobileScaffold extends StatelessWidget {
   const MobileScaffold({super.key});
@@ -52,7 +52,7 @@ class MobileScaffold extends StatelessWidget {
           ],
         ),
       ),
-      body: const HomeBody(),
+      body: const LandingPageLayout(),
     );
   }
 }
