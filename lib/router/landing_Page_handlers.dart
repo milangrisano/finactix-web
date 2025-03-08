@@ -6,7 +6,8 @@ import 'package:responsive_app/responsive/mobile_scaffold.dart';
 import 'package:responsive_app/responsive/reponsive_layout.dart';
 import 'package:responsive_app/responsive/tablet_scaffold.dart';
 
-final homeHandler = Handler(
+class LandingPageHandlers {
+  static Handler landingPage = Handler(
   handlerFunc: (context, params ){
     final page = params ['page']!.first;
     if( page != '/') {
@@ -20,4 +21,4 @@ final homeHandler = Handler(
     }
     return null;
   }
-);
+);}

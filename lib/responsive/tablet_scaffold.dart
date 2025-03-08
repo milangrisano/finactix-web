@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:responsive_app/Text/letters.dart';
 import 'package:responsive_app/provider/page_provider.dart';
 import 'package:responsive_app/shared/extend_appbar_icon.dart';
 import 'package:responsive_app/ui/layout/landing_page_layout.dart';
@@ -12,10 +13,16 @@ class TabletScaffold extends StatelessWidget {
     final pageProvider = Provider.of<PageProvider>(context, listen: false);
     return Scaffold(
       extendBodyBehindAppBar: true,
+      backgroundColor: const Color.fromARGB(255, 0, 4, 51),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         automaticallyImplyLeading: false,
-        title: const Text('Finactix'),
+        leading: Image.asset('assets/logo/Logo1.png'),
+        title: const LettersBold(
+          text: 'Finactix',
+          color: Color.fromRGBO(95, 145, 61, 1),
+          fontSize: 20,
+        ),
         actions: [
           ExtendAppBarIcon(
             text: 'Home',
