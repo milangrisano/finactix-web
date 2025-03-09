@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:responsive_app/provider/page_provider.dart';
-import 'package:responsive_app/responsive/desktop_scaffold.dart';
-import 'package:responsive_app/responsive/mobile_scaffold.dart';
-import 'package:responsive_app/responsive/reponsive_layout.dart';
-import 'package:responsive_app/responsive/tablet_scaffold.dart';
 import 'package:responsive_app/router/router.dart';
 
 void main() {

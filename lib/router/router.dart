@@ -1,6 +1,6 @@
 import 'package:fluro/fluro.dart';
 import 'package:responsive_app/router/auth_handlers.dart';
-import 'package:responsive_app/router/landing_Page_handlers.dart';
+import 'package:responsive_app/router/landing_page_handlers.dart';
 
 class Flurorouter {
   static final FluroRouter router = FluroRouter();

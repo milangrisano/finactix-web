@@ -4,6 +4,7 @@ import 'package:responsive_app/Text/letters.dart';
 import 'package:responsive_app/provider/page_provider.dart';
 import 'package:responsive_app/shared/extend_appbar_button.dart';
 import 'package:responsive_app/ui/layout/landing_page_layout.dart';
+import 'package:url_launcher/link.dart';
 
 class DesktopScaffold extends StatelessWidget {
   const DesktopScaffold({super.key});
@@ -44,11 +45,17 @@ class DesktopScaffold extends StatelessWidget {
             text: 'Book Keeping',
             onPressed: () => pageProvider.goTo(4),
           ),
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(Icons.person_2_rounded),
-            iconSize: 30,
-            color: const Color.fromRGBO(95, 145, 61, 1),
+          Link(
+            target: LinkTarget.blank,
+            uri: Uri.parse(
+              'https://nextcloud.finactix.com'
+            ),
+            builder: (context, followlink) => IconButton(
+              onPressed: followlink,
+              icon: const Icon(Icons.person_2_rounded),
+              color: const Color.fromRGBO(95, 145, 61, 1),
+              iconSize: 30,
+            ),
           ),
           const SizedBox(width: 20),
         ],
