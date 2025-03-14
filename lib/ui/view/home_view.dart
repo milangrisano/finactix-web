@@ -16,6 +16,7 @@ class HomeView extends StatelessWidget {
         ),
         child: const Column(
           children: [
+            SizedBox(height: 40),
             Spacer(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -48,7 +49,7 @@ class HomeView extends StatelessWidget {
             ),
             Spacer(),
             RibbonIndicators(),
-            SizedBox(height: 50,)
+            Spacer(),
           ],
         )
     );
